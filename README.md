@@ -16,7 +16,7 @@ composer install
 
 Then run the docker container
 ```
-docker run php:7.2-cli -d -p 80:80 -v $PWD:/var/www/html --name hypnobox_teste
+docker run -d -p 80:8000 -v ${PWD}:/var/www/html --name hypnobox_teste php:7.2-apache
 ```
 
 The docker container will be created and the 
